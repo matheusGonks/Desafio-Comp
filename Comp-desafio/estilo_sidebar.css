@@ -1,0 +1,47 @@
+#side-bar{
+    float: left;
+    width: 15%;
+    background: rgb(27,27,27);
+    max-height: calc(100vh - 9rem);
+    overflow-y: auto;
+}
+
+.item-sidebar{
+    width: 97%;
+    margin: 5px auto;
+    height: 30px;
+    padding: 10px 0 0 10px;
+    box-sizing: content-box;
+}
+
+.item-sidebar a{
+    text-align: center;
+}
+
+.item-sidebar:hover{
+    background-color: rgb(17, 17, 17);
+}
+
+
+.logo-sidebar{
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.logo-sidebar img{
+    width: 50%;
+    margin: 60px auto;  
+}
+
+.open-side-botao{
+    cursor: pointer;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(27, 27, 27);
+    padding: 10px;
+    font-size: 30px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo_menu.css">
+    <link rel="stylesheet" href="estilo_card.css">
+    <link rel="stylesheet" href="estilo_navbar.css">
+    <link rel="stylesheet" href="estilo_sidebar.css">
+    <title>Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="nav-bar">
+        
+        <div class="logo-navbar" style="float: left; background-color: rgb(32,32,32); height: 50px;">
+            <img src="imagens/comp_logo_transparente.png" alt="" style="height: 30px; width: 180px; margin: 10px 0 0 10px;">
+        </div>
+
+        <ul>
+            <li><input type="text" placeholder="Pesquisar"></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Quem Somos?</a></li>
+        </ul>
+    </div>
+
+    
+    <div id="side-bar" style="display: none;">
+        
+        <div class="item-sidebar">
+            <a href="#" onclick="side_close();return false;">
+                <p>Close &times;</p>
+            </a>    
+        </div>
+        
+        
+        <div class="logo-sidebar">
+            <img src="imagens/comp_logo.png" alt="Logo comp">
+        </div>
+
+        
+        <div class="item-sidebar">
+            <a href="#">
+                <p><i class='fas fa-home'></i>Início</p></a>
+        </div>
+
+        <div class="item-sidebar">
+            <a href="menu_principal.html"><p><i class='fas fa-crow'></i>Cards</p></a>
+        </div>
+
+        <div class="item-sidebar">
+            <a href="carrossel.html"><p><i class='fas fa-dove'></i>Carrossel</p></a>
+        </div>
+
+        <div class="item-sidebar">
+            <a href="tela_inicial.html"><p><i class='fas fa-feather'></i>Sair</p></a>
+        </div>
+
+        <p style="text-align: center; margin: 200px 0 20px 0; font-size: smaller;">Criado por Matheus Gonçalves<p>
+        
+    </div>
+
+    <div class="open-side">
+        <button class="open-side-botao" onclick="side_open()">☰</button>
+    </div>
+
+    
+    
+    
+    <div id="div-cards">
+        
+        <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="imagens/arara_caninde.jpg" alt="arara_canindé">
+                <div class="card-body">
+                    <a href="https://www.wikiaves.com/wiki/arara-caninde" target="_blank">
+                        <h2 class="card-text"> Arara Canindé </h2>
+                    </a>    
+                </div>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/cardeal_do_nordeste.jpg" alt="Cardeal do Nordeste">
+            <div class="card-body">
+                <a href="https://www.wikiaves.com.br/wiki/cardeal-do-nordeste" target="_blank">
+                    <h2 class="card-text"> Cardeal do Nordeste</h2>
+                </a>
+            </div>
+        </div>
+        
+
+        
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/martim_pescador.jpg" alt="Martim Pescador">
+            <div class="card-body">
+                <a href="https://www.wikiaves.com.br/wiki/martim-pescador-grande" target="_blank">
+                    <h2 class="card-text"> Martim Pescador </h2>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/saira_sete_cores.jpg" alt="Saíra Sete-Cores">
+            <div class="card-body">
+                <a href="https://www.wikiaves.com.br/wiki/saira-sete-cores" target="_blank">
+                    <h2 class="card-text">Saíra Sete-Cores</h2>
+                </a>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="https://kit.fontawesome.com/b8559d558a.js" crossorigin="anonymous"></script>
+    <script src="side_bar.js"></script>
+
+</body>
+</html>

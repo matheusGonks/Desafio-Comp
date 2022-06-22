@@ -1,0 +1,46 @@
+#nav-bar{
+    font-family: 'Montserrat', sans-serif; 
+    height: fit-content;   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(32, 32, 32);
+    height: 50px;
+}
+
+li{
+    float:right;
+    text-align: center;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 10px 40px;
+    font-weight: bold;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+li input{
+    width: 70%; 
+    height:50%;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;  
+}
+
+input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+li a:hover{
+    background: linear-gradient(180deg, rgb(41, 122, 4), rgb(1, 56, 82));
+}

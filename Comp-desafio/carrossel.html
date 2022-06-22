@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_menu.css">
+    <link rel="stylesheet" href="estilo_navbar.css">
+    <link rel="stylesheet" href="estilo_sidebar.css">
+    <link rel="stylesheet" href="estilo_carrossel.css">
+    <title>Carrossel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="nav-bar">
+        
+        <div class="logo-navbar" style="float: left; background-color: rgb(32,32,32); height: 50px;">
+            <img src="imagens/comp_logo_transparente.png" alt="" style="height: 30px; width: 180px; margin: 10px 0 0 10px;">
+        </div>
+
+        <ul>
+            <li><input type="text" placeholder="Pesquisar"></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Quem Somos?</a></li>
+        </ul>
+    </div>
+
+    
+    <div id="side-bar" style="display: none;">
+        
+        <div class="item-sidebar">
+            <a href="#" onclick="side_close();return false;">
+                <p>Close &times;</p>
+            </a>    
+        </div>
+        
+        
+        <div class="logo-sidebar">
+            <img src="imagens/comp_logo.png" alt="Logo comp">
+        </div>
+
+        
+        <div class="item-sidebar">
+            <a href="#">
+                <p><i class='fas fa-home'></i>Início</p></a>
+        </div>
+
+        <div class="item-sidebar">
+            <a href="menu_principal.html"><p><i class='fas fa-crow'></i>Cards</p></a>
+        </div>
+
+        <div class="item-sidebar">
+            <a href="carrossel.html"><p><i class='fas fa-dove'></i>Carrossel</p></a>
+        </div>
+
+        <div class="item-sidebar">
+            <a href="tela_inicial.html"><p><i class='fas fa-feather'></i>Sair</p></a>
+        </div>
+
+        <p style="text-align: center; margin: 200px 0 20px 0; font-size: smaller;">Criado por Matheus Gonçalves<p>
+        
+    </div>
+
+    <div class="open-side">
+        <button class="open-side-botao" onclick="side_open()">☰</button>
+    </div>
+    
+    <div id="carrossel">
+        
+        <div class="slide">
+            <img src="imagens/carcara.jpg" >
+            <div class="text">Carcará</div>
+        </div>
+
+        <div class="slide">
+            <img src="imagens/corrupiao.jpeg" >
+            <div class="text">Corrupião</div>
+        </div>
+
+        <div class="slide">
+            <img src="imagens/crejoa.jpg" >
+            <div class="text">Crejoá</div>
+        </div>
+
+        <div class="slide">
+            <img src="imagens/japu.jpeg" >
+            <div class="text">Japu</div>
+        </div>
+
+        <div class="slide">
+            <img src="imagens/tie-sangue.jpg" >
+            <div class="text">Tiê-Sangue</div>
+        </div>
+
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/b8559d558a.js" crossorigin="anonymous"></script>
+    <script src="side_bar.js"></script>
+
+
+</body>
+</html>
